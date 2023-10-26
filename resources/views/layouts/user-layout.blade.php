@@ -63,10 +63,11 @@ body {
 <body class="sidebar-collapse">
     <!-- Preloader -->
     <div class="preloader flex-column justify-content-center align-items-center">
-        <img class="animation__shake" src="imgs/gym-icon.png" alt="GymSystemLogo" height="150" width="150">
+        <img class="animation__shake" src="imgs/gym-logo.png" alt="GymSystemLogo" height="150" width="150">
     </div>
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="font-size: 14px;">
+        
         <!-- Left navbar links -->
         <ul class="navbar-nav">
             @role('admin|cityManager|gymManager')
@@ -75,12 +76,17 @@ body {
                         class="fas fa-bars"></i></a>
             </li>
             @endrole
-            <li class="nav-item d-none d-sm-inline-block">
-                <a href="#" class="nav-link">Home</a>
+            <li class="nav-item" style="font-size: 30px; margin-top: -10px; color: black;">
+                <a href="#" class="nav-link">Inicio</a>
             </li>
-            <!--  <li class="nav-item d-none d-sm-inline-block">
+            <li class="nav-item">
+            <img class="animation__shake" src="imgs/gym-logo.png" alt="GymSystemLogo" height="40" width="40">
+            </li>
+
+            <!--
+            <li class="nav-item d-none d-sm-inline-block">
                 <a href="#" class="nav-link">Contact</a>
-            </li> -->
+            </li>-->
         </ul>
 
         <!-- Right navbar links -->
@@ -90,7 +96,7 @@ body {
                     <img src="{{asset(auth()->user()->profileImageFile)}}" alt="User Avatar"
                         class="mr-2 mt-1 img-size-32 img-circle mr-2">
                     <div class="media-body">
-                        <h6 class="dropdown-item-title text-dark" style="font-size: 14px">
+                        <h6 class="dropdown-item-title text-white" style="font-size: 14px">
                             {{ auth()->user()->name }}
                         </h6>
                     </div>
@@ -118,28 +124,25 @@ body {
                     </li>
                 </ul>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-                    <i class="fas fa-expand-arrows-alt"></i>
-                </a>
-            </li>
+
         </ul>
     </nav>
     <!-- /.navbar -->
     <!-- Main Sidebar Container -->
     @role('admin|cityManager|gymManager')
 
-        <aside class="main-sidebar sidebar-dark-primary elevation-4" style="font-size: 14px;width: 200px;">
+    <aside class="main-sidebar sidebar-dark-primary elevation-4"
+    style="font-size: 20px; width: 200px; background-color: rgb(255, 128, 0); color: black; " font="color">
             <!-- Brand Logo -->
             <a href="{{ route('welcome') }}" class="brand-link px-2">
                 <span class="brand-text font-weight-light px-4">Gym System</span>
             </a>
             <!-- Sidebar -->.
-            <div class="sidebar">
+            <div class="sidebar" >
                 <!-- Sidebar user panel (optional) -->
-                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex" >
                     <div class="image">
-                        <img src="{{asset(auth()->user()->profileImageFile)}}" class="img-circle elevation-2"
+                        <img src="{{ asset(auth()->user()->profileImageFile) }}" class="img-circle elevation-2"
                             alt="User Image">
                     </div>
                     <div class="info">
@@ -147,7 +150,6 @@ body {
                             {{ auth()->user()->name }}
                         </a>
                     </div>
-
                 </div>
             </div>
             <!-- Sidebar Menu -->

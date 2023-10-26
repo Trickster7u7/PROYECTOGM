@@ -64,7 +64,7 @@
             </div>
         </section>
     </div>
-   <!--  <script>
+<script>
         function deletegymManager(id) {
             if (confirm("Do you want to delete this record?")) {
                 $.ajax({
@@ -79,5 +79,5 @@
                 });
             }
         }
-    </script> -->
+    </script>
 @endsection

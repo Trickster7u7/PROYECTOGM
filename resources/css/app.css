@@ -1,0 +1,10 @@
+.bg-purple {
+    background-color: rgb(132, 93, 209);
+    color: #fff; /* Texto blanco */
+}
+
+/* Fondo blanco para el modo claro */
+.bg-white {
+    background-color: #fff;
+    color: #000; /* Texto negro */
+}

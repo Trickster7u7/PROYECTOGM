@@ -7,7 +7,7 @@
                 <div class="card">
                     <div class="card-header" style="background-color: rgb(132, 93, 209);">{{ __('Iniciar Sesion') }}</div>
 
-                    <div class="card-body">
+                    <div class="card-body" style="background-color: rgb(228, 213, 255);">
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
 
@@ -17,9 +17,9 @@
 
                                 <div class="col-md-6">
                                     <input id="email" type="email"
-                                        class="form-control @error('login') is-invalid @enderror 
+                                        class="form-control @error('login') is-invalid @enderror
                                         @error('email') is-invalid @enderror"
-                                        name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                        name=" email" value="{{ old('email') }}" required autocomplete="email" autofocus  placeholder="Introduce tu correo electrónico">
                                     @error('login')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -40,7 +40,7 @@
                                 <div class="col-md-6">
                                     <input id="password" type="password"
                                         class="form-control @error('password') is-invalid @enderror" name="password"
-                                        required autocomplete="current-password">
+                                        required autocomplete="current-password"  placeholder="Introduce tu contraseña" >
 
                                     @error('password')
                                         <span class="invalid-feedback" role="alert">
@@ -65,7 +65,7 @@
 
                             <div class="row mb-0">
                                 <div class="col-md-8 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
+                                    <button type="submit" class="btn btn-primary" style="background-color: rgb(255, 128, 0);">
                                         {{ __('Iniciar Sesion') }}
                                     </button>
 

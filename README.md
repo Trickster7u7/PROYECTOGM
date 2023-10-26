@@ -7,25 +7,25 @@
  
 The Simple Gym Management System In Laravel/MySQL is a mini project for keeping records of members in the gym. Talking about the project, it contains an admin side from where can manage all the timetables and records of the gym users easily.  
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `The administration part consists of 4 types of managers who can enter the system`  
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `The administration part consists of 4 types of managers who can enter the system`
 
-1- `Admin`  :    
-&nbsp; &nbsp; &nbsp; &nbsp; Admin will have access to everything in the system,he can see any links or make any action Gym Manager   
-&nbsp; &nbsp; &nbsp; &nbsp; and City Manager can do with these extra functionalities.    
+1- `Admin`  :
+&nbsp; &nbsp; &nbsp; &nbsp; Admin will have access to everything in the system,he can see any links or make any action Gym Manager
+&nbsp; &nbsp; &nbsp; &nbsp; and City Manager can do with these extra functionalities.
 
-2- `City Manager` :    
-&nbsp; &nbsp; &nbsp; &nbsp; City Manager can do what Gym Manager do with extra functionalities … like he can see all gyms in his city and  
-&nbsp; &nbsp; &nbsp; &nbsp; make CRUD on any gym or gym manager in his city.  
+2- `City Manager` :
+&nbsp; &nbsp; &nbsp; &nbsp; City Manager can do what Gym Manager do with extra functionalities … like he can see all gyms in his city and
+&nbsp; &nbsp; &nbsp; &nbsp; make CRUD on any gym or gym manager in his city.
 
-3- `Gym Managers` :  
-&nbsp; &nbsp; &nbsp; &nbsp; Gym Manager can CRUD training sessions and assign coaches to these sessions, also he can buy training  
-&nbsp; &nbsp; &nbsp; &nbsp; package for a user through stripe.  
+3- `Gym Managers` :
+&nbsp; &nbsp; &nbsp; &nbsp; Gym Manager can CRUD training sessions and assign coaches to these sessions, also he can buy training
+&nbsp; &nbsp; &nbsp; &nbsp; package for a user through stripe.
 
-4- `coach` :  
-&nbsp; &nbsp; &nbsp; &nbsp; Can only see the sessions in which he trains.  
+4- `coach` :
+&nbsp; &nbsp; &nbsp; &nbsp; Can only see the sessions in which he trains.
 
-5- `User` (It will be API only) :  
-&nbsp; &nbsp; &nbsp; &nbsp; Cann't access the system because it is for the administration only, but there is an endpoint (API) for the user.   
+5- `User` (It will be API only) :
+&nbsp; &nbsp; &nbsp; &nbsp; Cann't access the system because it is for the administration only, but there is an endpoint (API) for the user.Ss
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `Each manager has Permissions that can be found in the following table`
 <h3 align="center"> Databas Permissions </h3>  					
@@ -86,50 +86,3 @@ All created accounts have a unified password `123456`.
 
 
 
-## Contributors
-<table>
-   <tr>
-    <td>
-      <img src="https://avatars.githubusercontent.com/u/93389016?v=4"></img>
-    </td>
-    <td>
-      <img src="https://avatars.githubusercontent.com/u/97949259?v=4"></img>
-    </td>
-    <td>
-      <img src="https://avatars.githubusercontent.com/u/97365136?v=4"></img>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/MohamedAlabasy"> Mohamed Alabasy </a>
-    </td>
-      <td>
-      <a href="https://github.com/dinaredaelsebaey"> Dina Reda </a>
-    </td>
-     <td>
-      <a href="https://github.com/MaiiEmad"> Mai Emad </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="https://avatars.githubusercontent.com/u/97946354?v=4"></img>
-    </td>
-    <td>
-      <img src="https://avatars.githubusercontent.com/u/95267859?v=4"></img>
-    </td>
-    <td>
-      <img src="https://avatars.githubusercontent.com/u/58011505?v=4"></img>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/Hala-salah77"> Hala Salah </a>
-    </td>
-      <td>
-      <a href="https://github.com/gehad300"> Gehad </a>
-    </td>
-     <td>
-      <a href="https://github.com/MahmoudNehro"> Mahmoud Nehro </a>
-    </td>
-  </tr>
-</table>
