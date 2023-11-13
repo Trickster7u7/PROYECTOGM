@@ -7,12 +7,12 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1>All Sessions</h1>
+                        <h1>Todas las sesiones</h1>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Projects</li>
+                            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                            <li class="breadcrumb-item active">Proyecto</li>
                         </ol>
                     </div>
                 </div>
@@ -22,7 +22,7 @@
         <section class="content">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">Projects</h3>
+                    <h3 class="card-title">Proyecto</h3>
                     <div class="card-tools">
                         <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
                             <i class="fas fa-minus"></i>
@@ -37,11 +37,11 @@
                         <thead>
                             <tr class="text-center">
                                 <th>ID</th>
-                                <th>Session Name</th>
-                                <th>Day</th>
-                                <th>Starts At</th>
-                                <th>Finishes At</th>
-                                <th>Actions </th>
+                                <th>Nombre</th>
+                                <th>Dia</th>
+                                <th>Inico</th>
+                                <th>Finaliza</th>
+                                <th>Informacion </th>
 
                             </tr>
                         </thead>

@@ -7,12 +7,12 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>All Users</h1>
+                    <h1>Todos los usuarios</h1>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Projects</li>
+                        <li class="breadcrumb-item"><a href="#">Inico</a></li>
+                        <li class="breadcrumb-item active">Proyectos</li>
                     </ol>
                 </div>
             </div>
@@ -24,7 +24,7 @@
         <!-- Default box -->
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">Projects</h3>
+                <h3 class="card-title">Proyectos</h3>
                 <div class="card-tools">
                     <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
                         <i class="fas fa-minus"></i>
@@ -39,20 +39,27 @@
                     <thead>
                         <tr>
                             <th class="project-state">ID</th>
-                            <th class="project-state"> User Name</th>
+                            <th class="project-state">Nombre de Usuario</th>
                             <th class="project-state">Email</th>
-                            <th class="project-state">Profile Picture</th>
+
+                            <th class="project-state">Paquete</th>
+                            <th class="project-state">Fecha de Corte</th>
+                            <th class="project-state">Imagen de Perfil</th>
                             <th></th>
+
                         </tr>
                     </thead>
                     <tbody>
                         @foreach ($users as $user)
                         <tr id="did{{ $user->id }}">
                             <td class="project-state">{{ $user->id }}</td>
-                            <td class="project-state">{{ $user->name }} </td>
+                            <td class="project-state">{{ $user->name }} </td> 
                             <td class="project-state">{{ $user->email }} </td>
+
+                            <td class="project-state"></td>
+                            <td class="project-state"> </td>
                             <td class="project-state"><img alt="Avatar" class="table-avatar"
-                                    src="{{ asset($user->profile_image) }}"></td>
+                                src="{{ asset($user->profile_image) }}"></td>
                             <td class="project-actions text-right">
                                 <a class="btn btn-info btn-sm" href="{{ route('allUsers.show', $user['id']) }}">
                                     <i class="fa fa-eye"></i>

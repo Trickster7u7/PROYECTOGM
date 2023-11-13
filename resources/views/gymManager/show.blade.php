@@ -7,7 +7,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h4>Show Gym Manager Number {{$singleUser->id}}</h4>
+                    <h4>Mostrar número de administrador del gimnasios {{$singleUser->id}}</h4>
                 </div>
             </div>
         </div><!-- /.container-fluid -->
@@ -23,9 +23,9 @@
                 <thead>
                         <tr>
                             <th>ID</th>
-                            <th> Gym Manager Name</th>
+                            <th>NOmbre</th>
                             <th>Email</th>
-                            <th>Profile Picture</th>
+                            <th>Imagen</th>
                         </tr>
                     </thead>
                     <tbody>

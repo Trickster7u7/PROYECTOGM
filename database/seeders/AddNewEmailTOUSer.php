@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\User;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -17,11 +16,11 @@ class AddNewEmailTOUSer extends Seeder
     public function run()
     {
         $alabasy =  DB::table('users')->insert([
-            'name' => 'Mohamed Alabasy',
-            'email' => 'mo7amed.el3basy@gmail.com',
+            'name' => 'Diego',
+            'email' => 'diego.gonzalez@gmail.com',
             'is_verifications' =>         '1',
             'email_verified_at' => '2022-03-12 12:39:55',
-            'national_id' => '29963709286168',
+            'national_id' => '1111111111',
             'password' => '$2y$10$c/WbS3jawweOO0mVRyalX.qmBAGrg.2UGCn1npqP0psqCzT4VfETm',
             'remember_token' => '8lWDHvKu56',
             'gender' => 'male',
@@ -33,7 +32,7 @@ class AddNewEmailTOUSer extends Seeder
             'created_at' => '2022-03-12 13:11:56',
             'updated_at' => '2022-03-12 13:11:56',
             'city_id' => '12',
-            'gym_id' => '1',
+            'gym_id' => '1s',
         ]);
         $gehad =  DB::table('users')->insert([
             'name' => 'gehad mosaad',

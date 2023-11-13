@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Buy a Package</title>
+	<title>Comprar Paquete</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <style type="text/css">
@@ -33,7 +33,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="row text-center">
-                        <h3 class="panel-heading">Payment Details</h3>
+                        <h3 class="panel-heading">Detalles de pago</h3>
                     </div>                    
                 </div>
                 <div class="panel-body">
@@ -54,13 +54,13 @@
   
                         <div class='form-row row'>
                             <div class='col-xs-12 form-group card required'>
-                                <label class='control-label'>Card Number</label> <input
+                                <label class='control-label'>Numero de targeta</label> <input
                                     autocomplete='off' class='form-control card-num' size='20'
                                     type='text'>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="name">User</label>
+                            <label for="name">Usuario</label>
                             <select id="user_id" class="form-control custom-select" name="user_id">
                                 @foreach(App\Models\User::role('user')->get() as $user)
                                 <option value="{{ $user->id }}">{{ $user->name }}</option>
@@ -68,7 +68,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="package_id">Package</label>
+                            <label for="package_id">Paquete</label>
                             <select id="package_id" class="form-control custom-select" name="package_id">
                                 @foreach(App\Models\TrainingPackage::get() as $package)
                                 <option value="{{ $package->id  }} | {{  $package->price }}">{{ $package->name }} -
@@ -82,7 +82,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="package_id">Gym</label>
+                            <label for="package_id">Gimancio</label>
                             <select id="package_id" class="form-control custom-select" name="gym_id">
                                 @foreach(App\Models\Gym::get() as $gym)
                                 <option value="{{ $gym->id  }} | {{ $gym->city->name }}">  {{ $gym->name }}  </option>
@@ -100,12 +100,12 @@
                                     type='text'>
                             </div>
                             <div class='col-xs-12 col-md-4 form-group expiration required'>
-                                <label class='control-label'>Expiration Month</label> <input
+                                <label class='control-label'>Mes de expiracion</label> <input
                                     class='form-control card-expiry-month' placeholder='MM' size='2'
                                     type='text'>
                             </div>
                             <div class='col-xs-12 col-md-4 form-group expiration required'>
-                                <label class='control-label'>Expiration Year</label> <input
+                                <label class='control-label'>Año de expiracion</label> <input
                                     class='form-control card-expiry-year' placeholder='YYYY' size='4'
                                     type='text'>
                             </div>
@@ -113,13 +113,13 @@
   
                         <div class='form-row row'>
                             <div class='col-md-12 hide error form-group'>
-                                <div class='alert-danger alert'>Fix the errors before you begin.</div>
+                                <div class='alert-danger alert'>Corrija los errores antes de comenzar.</div>
                             </div>
                         </div>
   
                         <div class="row">
                             <div class="col-xs-12">
-                                <button class="btn btn-danger btn-lg btn-block" type="submit">Pay Now (₹100)</button>
+                                <button class="btn btn-danger btn-lg btn-block" type="submit">Pagar ahora ($299.99)</button>
                             </div>
                         </div>
                           

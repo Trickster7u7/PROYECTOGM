@@ -10,7 +10,7 @@
                             <div class="small-box bg-info">
                                 <div class="inner">
                                     <h3>{{ $package->name }}</h3>
-                                    <p>Name</p>
+                                    <p>Nombre</p>
                                 </div>
                                 <div class="icon">
                                     <i class="fas text-white" style="font-size: 50px !important"></i>
@@ -23,7 +23,7 @@
                             <div class="small-box bg-danger">
                                 <div class="inner">
                                     <h3>{{ $package->price }}</h3>
-                                    <p>Price</p>
+                                    <p>Precio</p>
                                 </div>
                                 <div class="icon">
                                     <i class="fas fa-dumbbell text-white" style="font-size: 50px !important"></i>
@@ -35,7 +35,7 @@
                             <div class="small-box bg-warning">
                                 <div class="inner">
                                     <h3>{{ $package->sessions_number }} <sup style="font-size: 20px"></sup></h3>
-                                    <p>Sessions Number</p>
+                                    <p>Numero de sesiones</p>
                                 </div>
                                 <div class="icon">
                                     <i class="fas fa-user text-dark" style="font-size: 50px !important"></i>

@@ -17,12 +17,12 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h4>New Training Session</h4>
+                    <h4>Nueva sesion de entrenamiento</h4>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Create New Session</li>
+                        <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                        <li class="breadcrumb-item active">Crear nueva sesion</li>
                     </ol>
                 </div>
             </div>
@@ -37,7 +37,7 @@
                 <div class="col-md-12">
                     <div class="card card-primary">
                         <div class="card-header">
-                            <h3 class="card-title">Create</h3>
+                            <h3 class="card-title">Crear</h3>
                             <div class="card-tools">
                                 <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
                                     <i class="fas fa-minus"></i>
@@ -46,12 +46,12 @@
                         </div>
                         <div class="card-body">
                             <div class="form-group">
-                                <label for="name">Name</label>
+                                <label for="name">Nombre</label>
                                 <input type="text" id="name" class="form-control"  name="name">
                             </div>
 
                             <div class="form-group">
-                                <label for="name">Day</label>
+                                <label for="name">Dia</label>
                                 <input type="date" id="name" class="form-control" name="day">
                             </div>
                             <div class="form-group">
@@ -63,11 +63,11 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="starts_at">Starts At</label>
+                                <label for="starts_at">Inicia</label>
                                 <input type="time" id="starts_at" class="form-control"  name="starts_at">
                             </div>
                             <div class="form-group">
-                                <label for="finishes_at">Finishes At</label>
+                                <label for="finishes_at">Finaliza</label>
                                 <input type="time" id="finishes_at" class="form-control"  name="finishes_at">
                             </div>
 
@@ -77,7 +77,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <a href="{{ route('TrainingSessions.listSessions') }}" class="btn btn-secondary">Cancel</a>
+                    <a href="{{ route('TrainingSessions.listSessions') }}" class="btn btn-secondary">Cancelar</a>
                     <input type="submit" value="Save Changes" class="btn btn-success float-right">
                 </div>
             </div>

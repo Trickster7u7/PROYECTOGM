@@ -7,12 +7,12 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1>Purchases</h1>
+                        <h1>Compras</h1>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Projects</li>
+                            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                            {{-- <li class="breadcrumb-item active">Proyectos</li> --}}
                         </ol>
                     </div>
                 </div>
@@ -25,7 +25,7 @@
             <!-- Default box -->
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">Purchases</h3>
+                    <h3 class="card-title">Compras</h3>
                     <div class="card-tools">
                         <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
                             <i class="fas fa-minus"></i>
@@ -39,17 +39,17 @@
                     <table class="table table-striped projects" id="proj">
                         <thead>
                             <tr>
-                                <th>User ID</th>
-                                <th>User Email</th>
-                                <th>User Name</th>
-                                <th>Package Name</th>
-                                <th>Amount</th>
+                                <th>ID</th>
+                                <th>Email</th>
+                                <th>Nombre</th>
+                                <th>Nombre</th>
+                                <th>Monto</th>
                                 @role('admin')
-                                    <th>Gym Name</th>
-                                    <th>City Name</th>
+                                    <th>Nombre del Gimnacio</th>
+                                    <th>Ciudad</th>
                                 @endrole
                                 @role('cityManager')
-                                    <th>Gym Name</th>
+                                    <th>Nombre del Gimnacio</th>
                                 @endrole
 
                             </tr>

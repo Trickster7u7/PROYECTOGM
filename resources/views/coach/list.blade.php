@@ -7,11 +7,11 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h4>All Coaches</h4>
+                        <h4>Todos los Coaches</h4>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
                             <li class="breadcrumb-item active">Coaches</li>
                         </ol>
                     </div>
@@ -38,12 +38,12 @@
                     <table class="table table-striped projects" id="proj">
                         <thead>
                             <tr>
-                                <th class="project-state"> id</th>
-                                <th class="project-state">Coach Name</th>
-                                <th class="project-state">Coach Email</th>
-                                <th class="project-state">Coach City</th>
-                                <th class="project-state">Created at</th>
-                                <th class="project-state">Coach Image</th>
+                                <th class="project-state">ID</th>
+                                <th class="project-state">Nombre</th>
+                                <th class="project-state">Email</th>
+                                <th class="project-state">Ciudad</th>
+                                <th class="project-state">Regristo en</th>
+                                <th class="project-state">Imagen</th>
                                 <th></th>
                             </tr>
                         </thead>

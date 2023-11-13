@@ -7,12 +7,12 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1>All Gyms</h1>
+                        <h1>Todos los Gimnacios</h1>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Gyms</li>
+                            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                            <li class="breadcrumb-item active">Gimnacios</li>
                         </ol>
                     </div>
                 </div>
@@ -24,7 +24,7 @@
             <!-- Default box -->
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">Gyms</h3>
+                    <h3 class="card-title">Gimnacios</h3>
                     <div class="card-tools">
                         <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
                             <i class="fas fa-minus"></i>
@@ -38,11 +38,11 @@
                     <table class="table table-striped projects" id="proj">
                         <thead>
                             <tr>
-                                <th class="project-state">id</th>
-                                <th class="project-state">Gyms Name</th>
-                                <th class="project-state">Gym City</th>
-                                <th class="project-state">Created at</th>
-                                <th class="project-state">Gyms Cover Image</th>
+                                <th class="project-state">ID</th>
+                                <th class="project-state">Nombre</th>
+                                <th class="project-state">Ciudad</th>
+                                <th class="project-state">Fecha de Registro</th>
+                                <th class="project-state">Imagen</th>
                                 <th></th>
                             </tr>
                         </thead>

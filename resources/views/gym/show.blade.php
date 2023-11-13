@@ -8,12 +8,12 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1>Show </h1>
+                        <h1>Mostrar </h1>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Show</li>
+                            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                            <li class="breadcrumb-item active">Mostrar</li>
                         </ol>
                     </div>
                 </div>
@@ -27,7 +27,7 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-12 col-sm-6">
-                            <h6 class="d-inline-block d-sm-none">gym Name</h6>
+                            <h6 class="d-inline-block d-sm-none">Nombre de Gimnacio</h6>
                             <img class="img-fluid" src="{{ asset($singleGym->cover_image) }}">
                         </div>
                         <div class="col-12 col-sm-6 d-flex  align-items-center">
@@ -36,7 +36,7 @@
                                 <p class="my-3">{{ $singleGym->name }}</p>
 
                                 @if ($singleGym->city == null)
-                                    <p class="my-3">this gym has no city</p>
+                                    <p class="my-3">este gimnasio no tiene ciudad</p>
                                 @else
                                     <p class="my-3">{{ $singleGym->city->name }}</p>
                                 @endif

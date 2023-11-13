@@ -7,12 +7,12 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1>New City</h1>
+                        <h1>Nueva ciudad</h1>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Create New City</li>
+                            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                            <li class="breadcrumb-item active">Crear nueva ciudad</li>
                         </ol>
                     </div>
                 </div>
@@ -28,7 +28,7 @@
                     <div class="col-md-12">
                         <div class="card card-primary">
                             <div class="card-header">
-                                <h3 class="card-title">Create</h3>
+                                <h3 class="card-title">Crear</h3>
                                 <div class="card-tools">
                                     <button type="button" class="btn btn-tool" data-card-widget="collapse"
                                         title="Collapse">
@@ -38,7 +38,7 @@
                             </div>
                             <div class="card-body">
                                 <div class="form-group">
-                                    <label class="form-label" for="name">Name</label>
+                                    <label class="form-label" for="name">Nombre</label>
                                     <input required minlength="4" maxlength="100" type="text" id="name" name="name"
                                         class=" form-control @error('name') is-invalid @enderror"
                                         value="{{ $cityData->name }}">
@@ -49,16 +49,16 @@
                                     @enderror
                                 </div>
                                 <div class="form-group">
-                                    <label for="manager_id">City Manger</label>
+                                    <label for="manager_id">Gerente de la ciudad</label>
                                     <select required class=" form-control @error('manager_id') is-invalid @enderror"
                                         name="manager_id" id="manager_id">
                                         @if ($cityData->manager != null)
                                             <option value="{{ $cityData->manager->id }}">
                                                 {{ $cityData->manager->name }}
                                             </option>
-                                            <option value='optional'>Remove City Manager</option>
+                                            <option value='optional'>Eliminar Gerente</option>
                                         @else
-                                            <option value='optional' hidden>optional</option>
+                                            <option value='optional' hidden>Opcion</option>
                                         @endif
                                         <optgroup label="Available City Managers">
                                             @foreach ($cityManagers as $manager)
@@ -73,7 +73,7 @@
                                     @enderror
                                 </div>
                                 <div class="col-12">
-                                    <a href="{{ url()->previous() }}" class="btn btn-secondary">Cancel</a>
+                                    <a href="{{ url()->previous() }}" class="btn btn-secondary">Cancelar</a>
                                     <input type="submit" value="Update" class="btn btn-primary float-right">
                                 </div>
                             </div>

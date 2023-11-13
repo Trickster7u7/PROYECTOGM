@@ -17,12 +17,12 @@
                         </div>
                     @endif
                     <div class="col-sm-6">
-                        <h4>Add Gym To User</h4>
+                        <h4>Agregar gimnasio al usuario</h4>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Add Gym To User</li>
+                            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                            <li class="breadcrumb-item active">Agregar gimnasio al usuario</li>
                         </ol>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
                         @endif
                         <div class="card card-primary">
                             <div class="card-header">
-                                <h3 class="card-title">Adding Gym</h3>
+                                <h3 class="card-title">Agregar gimnasio</h3>
                                 <div class="card-tools">
                                     <button type="button" class="btn btn-tool" data-card-widget="collapse"
                                         title="Collapse">
@@ -49,7 +49,7 @@
                             </div>
                             <div class="card-body">
                                 <div class="form-group">
-                                    <label for="city">Gym</label>
+                                    <label for="city">Gimnacio</label>
                                     <select required class=" form-control" name="gym_id" id="city">
                                         <optgroup label="Available City">
                                             @foreach ($gyms as $gym)
@@ -64,7 +64,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <a href="#" class="btn btn-secondary">Cancel</a>
+                        <a href="#" class="btn btn-secondary">Cancelar</a>
                         <input type="submit" value="Save Changes" class="btn btn-success float-right">
                     </div>
                 </div>

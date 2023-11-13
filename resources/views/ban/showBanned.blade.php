@@ -8,11 +8,11 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h4>All Banned Users</h4>
+                        <h4>Todos los usuarios Baneados</h4>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Incio</a></li>
                             <li class="breadcrumb-item active">Coaches</li>
                         </ol>
                     </div>
@@ -25,7 +25,7 @@
             <!-- Default box -->
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">Banned</h3>
+                    <h3 class="card-title">Banneados</h3>
                     <div class="card-tools">
                         <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
                             <i class="fas fa-minus"></i>
@@ -39,11 +39,11 @@
                     <table class="table table-striped projects" id="proj">
                         <thead>
                             <tr>
-                                <th class="project-state">id</th>
-                                <th class="project-state">Name</th>
+                                <th class="project-state">ID</th>
+                                <th class="project-state">Nombre</th>
                                 <th class="project-state">Email</th>
-                                <th class="project-state">Profile Image</th>
-                                <th class="project-state">unBan</th>
+                                <th class="project-state">Imagen de perfil</th>
+                                <th class="project-state">Desbanear</th>
                             </tr>
                         </thead>
                         <tbody>

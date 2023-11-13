@@ -25,7 +25,7 @@
     <!-- summernote -->
     <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
     @yield('dataTable')
-    <title>Gym System</title>
+    <title>Sistema para gimnacio</title>
 </head>
 <style>
 .fa,
@@ -112,11 +112,11 @@ body {
                     <li class="user-footer d-flex justify-content-between">
                         <div class="pull-left">
                             <a href="{{ route('user.admin_profile', auth()->user()->id) }}"
-                                class="btn btn-default btn-flat">Profile</a>
+                                class="btn btn-default btn-flat">Prerfil</a>
                         </div>
                         <div class="pull-right">
                             <a href="{{ route('logout') }}" class="btn btn-default btn-flat" onclick="event.preventDefault();
-                                    document.getElementById('logout-form').submit();">Sign out</a>
+                                    document.getElementById('logout-form').submit();">Cerrar Sesion</a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                 @csrf
                             </form>
@@ -131,11 +131,11 @@ body {
     <!-- Main Sidebar Container -->
     @role('admin|cityManager|gymManager')
 
-    <aside class="main-sidebar sidebar-dark-primary elevation-4"
-    style="font-size: 20px; width: 200px; background-color: rgb(255, 128, 0); color: black; " font="color">
+    <aside class="main-sidebar sidebar-dark-primary elevation-4" style="font-size: 14px;width: 200px;">
+
             <!-- Brand Logo -->
             <a href="{{ route('welcome') }}" class="brand-link px-2">
-                <span class="brand-text font-weight-light px-4">Gym System</span>
+                <span class="brand-text font-weight-light px-4">GymRat</span>
             </a>
             <!-- Sidebar -->.
             <div class="sidebar" >
@@ -161,7 +161,7 @@ body {
                     <li class="nav-item">
                         <a href="/" class="nav-link">
                             <i class="nav-icon fas fa-dollar-sign"></i>
-                            <p>Revenue</p>
+                            <p>Ingresos</p>
                         </a>
                     </li>
                     @endrole
@@ -170,7 +170,7 @@ body {
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-city"></i>
-                            <p> Cities
+                            <p> Ciudades
                                 <i class="fas fa-angle-left right"></i>
                             </p>
                         </a>
@@ -178,19 +178,19 @@ body {
                             <li class="nav-item">
                                 <a href="{{ route('city.list') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p> All Cities </p>
+                                    <p> Todas las ciudades </p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('city.create') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p> Add New </p>
+                                    <p> Nueva ciudad </p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('city.showDeleted') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p> Restore Deleted </p>
+                                    <p> Papelera </p>
                                 </a>
                             </li>
                         </ul>
@@ -199,20 +199,20 @@ body {
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-user-tie"></i>
-                            <p> City Managers <i class="fas fa-angle-left right"></i>
+                            <p> Gerente de ciudad<i class="fas fa-angle-left right"></i>
                             </p>
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
                                 <a href="{{ route('cityManager.list') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p> All City Managers </p>
+                                    <p> todos gerentes de la ciudad </p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('cityManager.create') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p> Add New </p>
+                                    <p> Nuevo </p>
                                 </a>
                             </li>
                         </ul>
@@ -223,7 +223,7 @@ body {
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-dumbbell"></i>
-                            <p> Gyms
+                            <p> Gimnacios
                                 <i class="fas fa-angle-left right"></i>
                             </p>
                         </a>
@@ -231,13 +231,13 @@ body {
                             <li class="nav-item">
                                 <a href="/gym/list" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p> List Gyms </p>
+                                    <p> Lista de Gimnacios </p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="/gym/create" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p> Add New </p>
+                                    <p> Nuevo </p>
                                 </a>
                             </li>
                         </ul>
@@ -246,7 +246,7 @@ body {
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-user"></i>
-                            <p> Gym Managers
+                            <p> Administrador de Gimnacio
                                 <i class="fas fa-angle-left right"></i>
                             </p>
                         </a>
@@ -254,13 +254,13 @@ body {
                             <li class="nav-item">
                                 <a href="gymManager/list" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p> All Gym Managers </p>
+                                    <p> Todos los Administradores </p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="gymManager/create" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p> Add new </p>
+                                    <p> Nuevo </p>
                                 </a>
                             </li>
                         </ul>
@@ -278,13 +278,13 @@ body {
                             <li class="nav-item">
                                 <a href="coach/list" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p> All Coaches </p>
+                                    <p> Todos los coaches </p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="coach/create" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p> Add New </p>
+                                    <p> Nuevo </p>
                                 </a>
                             </li>
                         </ul>
@@ -293,7 +293,7 @@ body {
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-users"></i>
-                            <p> Users
+                            <p> Usuarios
                                 <i class="fas fa-angle-left right"></i>
                             </p>
                         </a>
@@ -301,7 +301,7 @@ body {
                             <li class="nav-item">
                                 <a href="/allUsers/list" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p> All Users </p>
+                                    <p> Todos los usuarios </p>
                                 </a>
                             </li>
                         </ul>
@@ -310,7 +310,7 @@ body {
                     <li class="nav-item">
                         <a href="/" class="nav-link">
                             <i class="nav-icon fas fa-cubes"></i>
-                            <p> Training Packages
+                            <p> Paquetes de entrenamiento
                                 <i class="fas fa-angle-left right"></i>
                             </p>
                         </a>
@@ -318,25 +318,25 @@ body {
                             <li class="nav-item">
                                 <a href="{{ route('trainingPackeges.listPackeges') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p> List Packages </p>
+                                    <p> lista de paquetes </p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('trainingPackeges.creatPackege') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p> Add New </p>
+                                    <p> Nuevo </p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('PaymentPackage.stripe') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p> Buy Package </p>
+                                    <p> Comprar paquete </p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('PaymentPackage.purchase_history') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p> Purchases </p>
+                                    <p> Compras </p>
                                 </a>
                             </li>
                         </ul>
@@ -345,7 +345,7 @@ body {
                     <li class="nav-item">
                         <a href="pages/kanban.html" class="nav-link">
                             <i class="nav-icon fas fa-cube"></i>
-                            <p> Training Session
+                            <p> Sesion de entrenamiento
                                 <i class="fas fa-angle-left right"></i>
                             </p>
                         </a>
@@ -353,13 +353,13 @@ body {
                             <li class="nav-item">
                                 <a href="{{ route('TrainingSessions.listSessions') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p> All Sessions </p>
+                                    <p> Todas las sesiones </p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('TrainingSessions.training_session') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p> Add New </p>
+                                    <p> Nueva </p>
                                 </a>
                             </li>
                         </ul>
@@ -368,7 +368,7 @@ body {
                     <li class="nav-item">
                         <a href="/listHistory" class="nav-link">
                             <i class="nav-icon fas fa-book"></i>
-                            <p> Attendance </p>
+                            <p> Asistencia </p>
                             </p>
                         </a>
                         </a>
@@ -377,7 +377,7 @@ body {
                     <li class="nav-item">
                         <a href="{{ route('user.listBanned') }}" class="nav-link">
                             <i class="nav-icon fa fa-user-lock"></i>
-                            <p> Banned Users </p>
+                            <p> Usuarios Baneados </p>
                         </a>
                     </li>
                 </ul>
@@ -391,8 +391,7 @@ body {
     <div id="sidebar-overlay"></div>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <footer class="main-footer d-flex justify-content-center" style="font-size:13px;">
-        <span>Copyright &copy; 2022-2023 <span class="bg-primary px-2 py-1">Gym Ststem.</span></span> All rights
-        reserved.
+        <span>Copyright &copy; 2022-2023 <span class="bg-primary px-2 py-1">GymRat.</span></span> Todos los derechos reservados para trickstertut.
     </footer>
     <!-- jQuery -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

@@ -8,12 +8,12 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h4>Package</h4>
+                        <h4>Paquete</h4>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">New Package</li>
+                            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                            <li class="breadcrumb-item active">Nuevo Paquete</li>
                         </ol>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                     <div class="col-md-12">
                         <div class="card card-primary">
                             <div class="card-header">
-                                <h3 class="card-title">Adding</h3>
+                                <h3 class="card-title">Agregar</h3>
                                 <div class="card-tools">
                                     <button type="button" class="btn btn-tool" data-card-widget="collapse"
                                         title="Collapse">
@@ -49,15 +49,15 @@
                                 <div class="form-group">
                                     {{-- <input type="hidden" id="id" class="form-control" value="" name="id"> --}}
 
-                                    <label for="name">Name</label>
+                                    <label for="name">Nombre</label>
                                     <input required type="text" id="name" class="form-control" name="name">
                                 </div>
                                 <div class="form-group">
-                                    <label for="price">price</label>
+                                    <label for="price">Precio</label>
                                     <input type="text" required id="price" class="form-control" name="price">
                                 </div>
                                 <div class="form-group">
-                                    <label class="form-label">Gym</label>
+                                    <label class="form-label">Gimnacio</label>
                                     <select class="form-control" name="gym_id">
                                         @foreach (App\Models\Gym::get() as $gym)
                                             <option value="{{ $gym->id }}">{{ $gym->name }}</option>
@@ -65,7 +65,7 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="sessions_number">Number of Sessions</label>
+                                    <label for="sessions_number">Numero de Sesiones</label>
                                     <input type="text" required id="sessions_number" class="form-control"
                                         name="sessions_number">
                                 </div>
@@ -78,7 +78,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <a href="#" class="btn btn-secondary">Cancel</a>
+                        <a href="#" class="btn btn-secondary">Cancelar</a>
                         <input type="submit" value="Save Changes" class="btn btn-success float-right">
                     </div>
                 </div>

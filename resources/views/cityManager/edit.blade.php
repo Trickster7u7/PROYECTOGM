@@ -20,12 +20,12 @@
                     @endif
 
                     <div class="col-sm-6">
-                        <h1>Gym City Manger</h1>
+                        <h1> Gerente de ciudad</h1>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Edit City Manger</li>
+                            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                            <li class="breadcrumb-item active">Editar Gerente de zona</li>
                         </ol>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                     <div class="col-md-12">
                         <div class="card card-primary">
                             <div class="card-header">
-                                <h3 class="card-title">Editing</h3>
+                                <h3 class="card-title">Editando</h3>
                                 <div class="card-tools">
                                     <button type="button" class="btn btn-tool" data-card-widget="collapse"
                                         title="Collapse">
@@ -51,13 +51,13 @@
                             </div>
                             <div class="card-body">
                                 <div class="form-group">
-                                    <label for="name">Name</label>
+                                    <label for="name">Nombre</label>
                                     <input type="text" id="name" class="form-control" value="{{ $singleUser->name }}"
                                         name="name">
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="pass">Password</label>
+                                    <label for="pass">Contraseña</label>
                                     <input type="password" id="pass" class="form-control"
                                         value="{{ $singleUser->password }}" name="password">
                                 </div>
@@ -67,12 +67,12 @@
                                         name="email">
                                 </div>
                                 <div class="form-group">
-                                    <label class="form-label" for="image">Upload Image</label>
+                                    <label class="form-label" for="image">Subir Imagen</label>
                                     <input type="file" class="form-control" id="image" name="profile_image"
                                         value="{{ asset($singleUser->profile_image) }}">
                                 </div>
                                 <div class="form-group">
-                                    <label for="nationalID">National ID</label>
+                                    <label for="nationalID">CURP</label>
                                     <input type="text" id="nationalID" class="form-control" name="national_id"
                                         value="{{ $singleUser->national_id }}">
                                 </div>

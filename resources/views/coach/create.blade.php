@@ -18,12 +18,12 @@
                         </div>
                     @endif
                     <div class="col-sm-6">
-                        <h1>New Coach</h1>
+                        <h1>Nuevo Coach</h1>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Create New Coach</li>
+                            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                            <li class="breadcrumb-item active">Nuevo Coach</li>
                         </ol>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                         @endif
                         <div class="card card-primary">
                             <div class="card-header">
-                                <h3 class="card-title">Create</h3>
+                                <h3 class="card-title">Crear</h3>
                                 <div class="card-tools">
                                     <button type="button" class="btn btn-tool" data-card-widget="collapse"
                                         title="Collapse">
@@ -50,7 +50,7 @@
                             </div>
                             <div class="card-body">
                                 <div class="form-group">
-                                    <label for="name">Name</label>
+                                    <label for="name">Nombre</label>
                                     <input autofocus required minlength="3" maxlength="50" type="text" id="name"
                                         class="form-control" value="" name="name">
                                 </div>
@@ -59,7 +59,7 @@
                                     <input required type="email" id="email" class="form-control" value="" name="email">
                                 </div>
                                 <div class="form-group">
-                                    <label for="city">City</label>
+                                    <label for="city">Ciudad</label>
                                     <select required class=" form-control" name="city_id" id="city">
                                         <optgroup label="Available City">
                                             @foreach ($cities as $city)
@@ -69,7 +69,7 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label class="form-label" for="image">Image Cover</label>
+                                    <label class="form-label" for="image">Imagen</label>
                                     <input type="file" class="form-control" id="image" name="profile_image">
                                 </div>
                             </div>
@@ -78,7 +78,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <a href="#" class="btn btn-secondary">Cancel</a>
+                        <a href="#" class="btn btn-secondary">Cancelar</a>
                         <input type="submit" value="Save Changes" class="btn btn-success float-right">
                     </div>
                 </div>

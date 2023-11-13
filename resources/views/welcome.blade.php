@@ -9,7 +9,7 @@
                         <div class="small-box bg-info">
                             <div class="inner">
                                 <h3>{{ $revenueInDollars }}</h3>
-                                <p>Total Revenue</p>
+                                <p>Ingresos Totales</p>
                             </div>
                             <div class="icon">
                                 <i class="fas fa-dollar-sign text-white" style="font-size: 50px !important"></i>
@@ -24,7 +24,7 @@
                             <div class="small-box bg-success">
                                 <div class="inner">
                                     <h3>{{ $cities }}</h3>
-                                    <p>Cities</p>
+                                    <p>Ciudades</p>
                                 </div>
                                 <div class="icon">
                                     <i class="fas fa-city text-white" style="font-size: 50px !important"></i>
@@ -38,7 +38,7 @@
                             <div class="small-box bg-secondary">
                                 <div class="inner">
                                     <h3>{{ $citiesManagers }}<sup style="font-size: 20px"></sup></h3>
-                                    <p>Cities Managers</p>
+                                    <p>Gerente de ciudad</p>
                                 </div>
                                 <div class="icon">
                                     {{-- <i class="fas fa-user-tie"></i> --}}
@@ -55,7 +55,7 @@
                             <div class="small-box bg-danger">
                                 <div class="inner">
                                     <h3>{{ $gyms }}</h3>
-                                    <p>Gyms</p>
+                                    <p>Gimnacios</p>
                                 </div>
                                 <div class="icon">
                                     <i class="fas fa-dumbbell text-white" style="font-size: 50px !important"></i>
@@ -70,7 +70,7 @@
                             <div class="small-box bg-warning">
                                 <div class="inner">
                                     <h3>{{ $gymsManagers }}<sup style="font-size: 20px"></sup></h3>
-                                    <p>Gyms Managers</p>
+                                    <p>Administrador del gimnacio</p>
                                 </div>
                                 <div class="icon">
                                     <i class="fas fa-user text-dark" style="font-size: 50px !important"></i>
@@ -88,7 +88,7 @@
                             <div class="small-box bg-light">
                                 <div class="inner">
                                     <h3>{{ $coaches }}<sup style="font-size: 20px"></sup></h3>
-                                    <p>Coaches</p>
+                                    <p>Entrenadores</p>
                                 </div>
                                 <div class="icon">
                                     <i class="fas fa-user-ninja text-dark" style="font-size: 50px !important"></i>
@@ -102,7 +102,7 @@
                             <div class="small-box bg-dark">
                                 <div class="inner">
                                     <h3>{{ $users }}</h3>
-                                    <p>Users</p>
+                                    <p>Usuarios</p>
                                 </div>
                                 <div class="icon">
                                     <i class="fas fa-users text-white" style="font-size: 50px !important"></i>
@@ -120,11 +120,11 @@
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center border-bottom mb-3">
                                         <p class="d-flex flex-column text-center font-weight-bold">
-                                            Starts at
+                                            Inicio en
                                             <span class="text-muted">{{ $session->starts_at }}</span>
                                         </p>
                                         <p class="d-flex flex-column text-center font-weight-bold">
-                                            End AT
+                                            Termino en
                                             <span class="text-muted">{{ $session->finishes_at }}</span>
                                         </p>
                                     </div>

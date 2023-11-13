@@ -10,7 +10,7 @@
                             <div class="small-box bg-info">
                                 <div class="inner">
                                     <h3>{{ $revenueInDollars }}</h3>
-                                    <p>Total Revenue</p>
+                                    <p>Total de Ganansios</p>
                                 </div>
                                 <div class="icon">
                                     <i class="fas fa-dollar-sign text-white" style="font-size: 50px !important"></i>
@@ -23,7 +23,7 @@
                             <div class="small-box bg-danger">
                                 <div class="inner">
                                     <h3>{{ $gyms }}</h3>
-                                    <p>Gyms</p>
+                                    <p>Gimnacios</p>
                                 </div>
                                 <div class="icon">
                                     <i class="fas fa-dumbbell text-white" style="font-size: 50px !important"></i>
@@ -36,7 +36,7 @@
                             <div class="small-box bg-warning">
                                 <div class="inner">
                                     <h3>{{ $gymsManagers }}<sup style="font-size: 20px"></sup></h3>
-                                    <p>Gyms Managers</p>
+                                    <p> Gerente de los Gimnacios</p>
                                 </div>
                                 <div class="icon">
                                     <i class="fas fa-user text-dark" style="font-size: 50px !important"></i>
@@ -62,7 +62,7 @@
                             <div class="small-box bg-dark">
                                 <div class="inner">
                                     <h3>{{ $users }}</h3>
-                                    <p>Users</p>
+                                    <p>Usuarios</p>
                                 </div>
                                 <div class="icon">
                                     <i class="fas fa-users text-white" style="font-size: 50px !important"></i>
@@ -78,7 +78,7 @@
                             @if ($citiesManagers == null)
                                 <figure class="mt-5">
                                     <i class="fas fa-user-tie" style="font-size: 100px !important"></i>
-                                    <h3>This city have no city manager <sup style="font-size: 20px"></sup></h3>
+                                    <h3>La ciudad aun no cuenta con ningun Manager <sup style="font-size: 20px"></sup></h3>
                                 </figure>
                             @else
                                 <figure class="mt-3">

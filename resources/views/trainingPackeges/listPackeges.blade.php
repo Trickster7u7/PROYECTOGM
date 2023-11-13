@@ -7,12 +7,12 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1>All Packages</h1>
+                        <h1>Todos los paquetes</h1>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Projects</li>
+                            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                            <li class="breadcrumb-item active">Proyecto</li>
                         </ol>
                     </div>
                 </div>
@@ -24,7 +24,7 @@
             <!-- Default box -->
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">Projects</h3>
+                    <h3 class="card-title">Proyecto</h3>
                     <div class="card-tools">
                         <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
                             <i class="fas fa-minus"></i>
@@ -38,12 +38,12 @@
                     <table class="table table-striped projects" id="proj">
                         <thead>
                             <tr>
-                                <th class="project-state">Package Id</th>
-                                <th class="project-state">Package Name</th>
-                                <th class="project-state">Price</th>
-                                <th class="project-state">Number of sessions</th>
-                                <th class="project-state">Creator</th>
-                                <th class="text-center">Actions </th>
+                                <th class="project-state">ID</th>
+                                <th class="project-state">Nombre</th>
+                                <th class="project-state">Precio</th>
+                                <th class="project-state">Numero de sesiones</th>
+                                <th class="project-state">Creador</th>
+                                <th class="text-center">Informacion </th>
 
                             </tr>
                         </thead>

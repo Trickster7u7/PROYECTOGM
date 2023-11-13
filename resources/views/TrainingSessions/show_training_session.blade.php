@@ -7,7 +7,7 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h4>Show Session {{ $trainingSession->id }}</h4>
+                        <h4>Mostrar Sesion {{ $trainingSession->id }}</h4>
                     </div>
                 </div>
             </div><!-- /.container-fluid -->
@@ -23,10 +23,10 @@
                         <thead>
                             <tr>
                                 <th class="project-state">ID</th>
-                                <th class="project-state">Name</th>
-                                <th class="project-state">Day</th>
-                                <th class="project-state">Starts At</th>
-                                <th class="project-state">Finishes At</th>
+                                <th class="project-state">Nombre</th>
+                                <th class="project-state">Dia</th>
+                                <th class="project-state">Inica</th>
+                                <th class="project-state">Finaliza</th>
                             </tr>
                         </thead>
                         <tbody>

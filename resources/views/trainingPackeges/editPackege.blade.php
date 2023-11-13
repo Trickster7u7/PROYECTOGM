@@ -10,12 +10,12 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Edit Package</h1>
+                    <h1>Editar paquete</h1>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Edit Package</li>
+                        <li class="breadcrumb-item"><a href="#">Inico</a></li>
+                        <li class="breadcrumb-item active">Editar paquete</li>
                     </ol>
                 </div>
             </div>
@@ -31,7 +31,7 @@
                 <div class="col-md-12">
                     <div class="card card-primary">
                         <div class="card-header">
-                            <h3 class="card-title">Edit</h3>
+                            <h3 class="card-title">Editar</h3>
                             <div class="card-tools">
                                 <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
                                     <i class="fas fa-minus"></i>
@@ -40,11 +40,11 @@
                         </div>
                         <div class="card-body">
                             <div class="form-group">
-                                <label for="name">Name</label>
+                                <label for="name">Nombre</label>
                                 <input type="text" id="name" class="form-control" value="{{$package->name}}" name="name">
-                                <label for="day">Price</label>
+                                <label for="day">Precio</label>
                                 <input type="text" id="price" class="form-control" value="{{$package->price}}" name="price">
-                                <label for="sessions">Sessions Number</label>
+                                <label for="sessions">Numero de sesiones</label>
                                 <input type="text" id="sessions" class="form-control" value="{{$package->sessions_number}}" name="sessions_number">
 
                                 @if ($errors->any())
@@ -71,7 +71,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <a href="#" class="btn btn-secondary">Cancel</a>
+                    <a href="#" class="btn btn-secondary">Cancelar</a>
                     <input type="submit" value="Update" class="btn btn-success float-right">
                 </div>
             </div>

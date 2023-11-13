@@ -7,12 +7,12 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1>All Managers</h1>
+                        <h1>Todos los Administradores de Gimancio</h1>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Projects</li>
+                            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                            <li class="breadcrumb-item active">Proyecto</li>
                         </ol>
                     </div>
                 </div>
@@ -24,7 +24,7 @@
             <!-- Default box -->
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">Projects</h3>
+                    <h3 class="card-title">Proyecto</h3>
                     <div class="card-tools">
                         <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
                             <i class="fas fa-minus"></i>
@@ -39,10 +39,10 @@
                         <thead>
                             <tr>
                                 <th class="project-state">ID</th>
-                                <th class="project-state"> Gym Manager Name</th>
+                                <th class="project-state">Nombre</th>
                                 <th class="project-state">Email</th>
-                                <th class="project-state">Profile Picture</th>
-                                <th class="project-state">National ID</th>
+                                <th class="project-state">Imagen</th>
+                                <th class="project-state">CURP</th>
                                 <th></th>
                             </tr>
                         </thead>

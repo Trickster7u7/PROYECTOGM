@@ -16,14 +16,14 @@
                 <div class="row mb-2">
 
                     <div class="col-sm-6">
-                        <h4>Profile</h4>
+                        <h4>Perfil</h4>
                     </div>
 
 
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active"> Admin Profile</li>
+                            <li class="breadcrumb-item"><a href="#">Inio</a></li>
+                            <li class="breadcrumb-item active">Perfil Administrativo</li>
                         </ol>
                     </div>
 
@@ -33,14 +33,14 @@
                 <div class="row mb-2">
 
                     <div class="col-sm-6">
-                        <h4>City Manager Profile</h4>
+                        <h4>Perfil de gerente de zona</h4>
                     </div>
 
 
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active"> City Manager Profile</li>
+                            <li class="breadcrumb-item"><a href="#">incio</a></li>
+                            <li class="breadcrumb-item active"> Perfil de gerente de zona</li>
                         </ol>
                     </div>
 
@@ -50,14 +50,14 @@
                 <div class="row mb-2">
 
                     <div class="col-sm-6">
-                        <h4>Gym Manager Profile</h4>
+                        <h4>perfil del administrador del gimancio </h4>
                     </div>
 
 
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active"> Gym Manager Profile</li>
+                            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                            <li class="breadcrumb-item active"> perfil del administrador del gimancio</li>
                         </ol>
                     </div>
                     @endrole
@@ -65,14 +65,14 @@
                 <div class="row mb-2">
 
                     <div class="col-sm-6">
-                        <h4>coach Profile</h4>
+                        <h4>Perfil del Coach</h4>
                     </div>
 
 
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active"> coach Profile</li>
+                            <li class="breadcrumb-item"><a href="#">Incico</a></li>
+                            <li class="breadcrumb-item active"> Perfil del Coach</li>
                         </ol>
                     </div>
 
@@ -99,7 +99,7 @@
                     <ul class="list-group list-group-unbordered mb-3">
                         <li class="list-group-item">
 
-                            <b>Name</b> <a class="float-right">{{ auth()->user()->name }}</a>
+                            <b>Nombre</b> <a class="float-right">{{ auth()->user()->name }}</a>
                         </li>
                         <li class="list-group-item">
                             <b>Email</b> <a class="float-right">{{ auth()->user()->email }}</a>
@@ -108,7 +108,7 @@
                     </ul>
 
                     <a href="{{ route('user.edit_admin_profile', auth()->user()->id) }}"
-                        class="btn btn-primary btn-block"><b>Edit</b></a>
+                        class="btn btn-primary btn-block"><b>Editar</b></a>
                 </div>
                 <!-- /.card-body -->
             </div>

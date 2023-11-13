@@ -7,12 +7,12 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h4>City Manger Profile</h4>
+                        <h4>Perfil del gerente de zona</h4>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Profile City Manger</li>
+                            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                            <li class="breadcrumb-item active">Perfil del gerente de zona</li>
                         </ol>
                     </div>
                 </div>
@@ -39,11 +39,11 @@
                             <b>Following</b> <a class="float-right">543</a>
                         </li>
                         <li class="list-group-item">
-                            <b>Friends</b> <a class="float-right">13,287</a>
+                            <b>Amigos</b> <a class="float-right">13,287</a>
                         </li>
                     </ul>
 
-                    <a href="#" class="btn btn-primary btn-block"><b>Edit</b></a>
+                    <a href="#" class="btn btn-primary btn-block"><b>Editar</b></a>
                 </div>
                 <!-- /.card-body -->
             </div>

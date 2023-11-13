@@ -37,7 +37,7 @@
                     <table class="table table-striped projects" id="proj">
                         <thead>
                             <tr>
-                                <th class="project-state">Name</th>
+                                <th class="project-state">Nombre</th>
                                 <th class="project-state">Email</th>
                                 <th class="project-state"> Training session name</th>
                                 <th class="project-state">Attendance time</th>
